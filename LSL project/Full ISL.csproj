@@ -1,0 +1,268 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E96337B2-2598-4B4C-AC89-3905F93D6B11}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Full_ISL</RootNamespace>
+    <AssemblyName>Full ISL</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=8.0.33.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\MySQL\Connector NET 8.0\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="choice_vid_text.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="choice_vid_text.Designer.cs">
+      <DependentUpon>choice_vid_text.cs</DependentUpon>
+    </Compile>
+    <Compile Include="save_vid_txt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="save_vid_txt.Designer.cs">
+      <DependentUpon>save_vid_txt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Upload_vid_txt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Upload_vid_txt.Designer.cs">
+      <DependentUpon>Upload_vid_txt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Save_vid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Save_vid.Designer.cs">
+      <DependentUpon>Save_vid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modify.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modify.Designer.cs">
+      <DependentUpon>Modify.cs</DependentUpon>
+    </Compile>
+    <Compile Include="int_video_sign.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="int_video_sign.Designer.cs">
+      <DependentUpon>int_video_sign.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ind_video_sign.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ind_video_sign.Designer.cs">
+      <DependentUpon>Ind_video_sign.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin.Designer.cs">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="crud.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="crud.Designer.cs">
+      <DependentUpon>crud.cs</DependentUpon>
+    </Compile>
+    <Compile Include="upload_vid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="upload_vid.Designer.cs">
+      <DependentUpon>upload_vid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rename_txt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rename_txt.Designer.cs">
+      <DependentUpon>rename_txt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forget_pw.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forget_pw.Designer.cs">
+      <DependentUpon>Forget_pw.cs</DependentUpon>
+    </Compile>
+    <Compile Include="change_pw.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="change_pw.Designer.cs">
+      <DependentUpon>change_pw.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewReg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewReg.Designer.cs">
+      <DependentUpon>NewReg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="new_email.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="new_email.Designer.cs">
+      <DependentUpon>new_email.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User_choice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User_choice.Designer.cs">
+      <DependentUpon>User_choice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Indian.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Indian.Designer.cs">
+      <DependentUpon>Indian.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Internation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Internation.Designer.cs">
+      <DependentUpon>Internation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="choice_vid_text.resx">
+      <DependentUpon>choice_vid_text.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="save_vid_txt.resx">
+      <DependentUpon>save_vid_txt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Upload_vid_txt.resx">
+      <DependentUpon>Upload_vid_txt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Save_vid.resx">
+      <DependentUpon>Save_vid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modify.resx">
+      <DependentUpon>Modify.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="int_video_sign.resx">
+      <DependentUpon>int_video_sign.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ind_video_sign.resx">
+      <DependentUpon>Ind_video_sign.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin.resx">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="crud.resx">
+      <DependentUpon>crud.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="upload_vid.resx">
+      <DependentUpon>upload_vid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rename_txt.resx">
+      <DependentUpon>rename_txt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forget_pw.resx">
+      <DependentUpon>Forget_pw.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="change_pw.resx">
+      <DependentUpon>change_pw.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewReg.resx">
+      <DependentUpon>NewReg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="new_email.resx">
+      <DependentUpon>new_email.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User_choice.resx">
+      <DependentUpon>User_choice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Indian.resx">
+      <DependentUpon>Indian.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Internation.resx">
+      <DependentUpon>Internation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
